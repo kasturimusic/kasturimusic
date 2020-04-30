@@ -1935,6 +1935,8 @@ input, select, textarea {
 			font-size: 0.85em;
 			letter-spacing: 3px;
 			text-align: center;
+			border-style: solid;
+			border-color: red;
 		}
 
 /* Nav */
@@ -2096,63 +2098,12 @@ input, select, textarea {
 		}
 
 /* Banner */
-
-	#banner {
+	
+	#banner > .container {
 		position: relative;
-		overflow: hidden;
-		background: #fff;
-		color: #fff;
-		text-align: center;
-		border-top: solid 2px #e5e5e5;
-		border-bottom: solid 2px #e5e5e5;
-		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
-		position: relative;
-		text-transform: uppercase;
-		background: url("../../images/banner.jpg");
-		background-size: cover;
-		padding: 10em 0;
+		width: 100%;
+		height: 50%;
 	}
-
-		#banner p {
-			font-weight: 400;
-			font-size: 2em;
-			line-height: 1.5em;
-			letter-spacing: 4px;
-			text-align: center;
-			margin: 0;
-		}
-
-		#banner strong {
-			color: inherit;
-		}
-
-		#banner > .container {
-			position: relative;
-		}
-
-			#banner > .container:before, #banner > .container:after {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				width: 35px;
-				height: 141px;
-				margin-top: -70px;
-				background: url("images/bracket.svg");
-				opacity: 0.15;
-			}
-
-			#banner > .container:before {
-				left: 0;
-			}
-
-			#banner > .container:after {
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-				right: 0;
-			}
 
 /* Main */
 
